@@ -1,13 +1,9 @@
-torch>=1.13 # Or whatever ComfyUI and Detectron2/Transformers recommend
+torch>=1.13
 torchvision>=0.14
 transformers>=4.20.0
 Pillow>=9.0.0
 opencv-python>=4.5.0
 numpy>=1.20.0
-# detectron2 (Installation for detectron2 is complex and OS-dependent, usually not just pip)
-# densepose (Part of detectron2)
-# Users will need to install detectron2 and its dependencies (including densepose) manually
-# following official instructions: https://detectron2.readthedocs.io/en/latest/tutorials/install.html
-# We can check for its availability.
-matplotlib # Your original script had it, though not directly used in active path
-# glob is standard library
+easyocr>=1.4.1
+# User needs to have comfyui_controlnet_aux (or another DensePose provider) installed separately
+# User also needs to have Detectron2 installed if their chosen DensePose provider relies on it.
